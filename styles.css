@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://images.squarespace-cdn.com/content/v1/5e949a92e17d55230cd1d44f/1732997782696-ZH2T8YILBRMMJHZZ58US/Liminal+3x2.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  justify-content: center;  /* Horizontally center the content */
+  align-items: center;  /* Vertically center the content */
+  height: 100vh;  /* Ensure the body takes up the full viewport height */
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(50, 50, 50, 0.8);
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.blur-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(50, 50, 50, 0.8);
+  filter: blur(8px); /* Apply blur only to the background */
+  z-index: -1; /* Ensure the blur is behind the content */
+  border-radius: 20px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column; /* Arrange profile elements vertically */
+  align-items: center; /* Center align items horizontally */
+  margin-bottom: 20px; /* Added margin to separate profile from other sections */
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 120px;  /* Original size */
+  height: 120px; /* Original size */
+  margin-bottom: 10px; /* Default margin */
+}
+
+.profile a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  display: inline-block;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-style: italic; /* Italicized text */
+}
+
+.profile a:hover {
+  color: #4CAF50;
+}
+
+.description {
+  text-align: center;
+  margin-top: 20px; /* Default margin */
+}
+
+.projects {
+  text-align: center;
+  margin-top: 20px; /* Reduced gap between description and projects */
+}
+
+.projects img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.projects button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for the background color */
+}
+
+.projects button:hover {
+  background-color: #45a049; /* Change only background color on hover */
+}
+
+.projects h2 {
+  display: inline-block;
+  margin-right: 10px; /* Default margin */
+  vertical-align: middle;
+}
+
+.material-icons {
+  font-size: 36px;
+  vertical-align: middle;
+  color: #4CAF50; /* Same color as the button */
+  margin-right: 10px; /* Restored margin */
+}
+
+.projects .button-container {
+  display: flex;
+  justify-content: center;
+}
